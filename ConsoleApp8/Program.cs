@@ -1,4 +1,7 @@
-namespace ConsoleApp15
+using System;
+using System.Collections.Generic;
+
+namespace ConsoleApp8
 {
     internal class Program
     {
@@ -144,7 +147,13 @@ namespace ConsoleApp15
                 }
                 if (input == "E")
                 {
-                    shapes.Add(Sqaure);
+                    Shape t = new Shape();
+                    t.AddPoint("A", 10, 10);
+                    t.AddPoint("B", 20, 10);
+                    t.AddPoint("C", 20, 20);
+                    t.AddPoint("D", 10, 20);
+
+                    shapes.Add(t);
                 }
                 for (int i = 0; i < size - 1; i++)
                 {
